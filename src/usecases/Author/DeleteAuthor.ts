@@ -6,5 +6,6 @@ export class DeleteAuthor {
 
   async execute(id: string):Promise<void>{
     await this.authorRepository.delete(id);
+  
   }
 }
